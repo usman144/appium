@@ -11,7 +11,7 @@ import io.appium.java_client.AppiumDriver;
 
 @Test
 public class EveTest {
-	
+	static AppiumDriver<WebElement>driver;
 	
 	
 	DesiredCapabilities cap = new DesiredCapabilities();

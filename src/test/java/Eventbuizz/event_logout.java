@@ -1,16 +1,14 @@
-
 package Eventbuizz;
 
-import java.net.MalformedURLException;
 import java.net.URL;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
+
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
 
-public class Login {
-
+public class event_logout {
 	
 	static AppiumDriver<WebElement>driver;
 	public static void main(String[] args) 
@@ -48,10 +46,10 @@ public class Login {
 				System.out.println("Application launched ...Yahoo!!");
 				
 				
-				WebElement EveCode  =   driver.findElement(By.id("com.eventbuizz.checkin:id/eteventCode"));
-				WebElement email    =   driver.findElement(By.id("com.eventbuizz.checkin:id/emailField"));
-				WebElement password =   driver.findElement(By.id("com.eventbuizz.checkin:id/passwordField"));
-				WebElement signin   =   driver.findElement(By.id("com.eventbuizz.checkin:id/btnSave"));
+				WebElement EveCode  = driver.findElement(By.id("com.eventbuizz.checkin:id/eteventCode"));
+				WebElement email    = driver.findElement(By.id("com.eventbuizz.checkin:id/emailField"));
+				WebElement password  = driver.findElement(By.id("com.eventbuizz.checkin:id/passwordField"));
+				WebElement signin  = driver.findElement(By.id("com.eventbuizz.checkin:id/btnSave"));
 
 				
 				EveCode.sendKeys("8167");
@@ -61,12 +59,15 @@ public class Login {
 				System.out.println("login Test passed");
 				
 				
-			
-				 
 				
 				
-	}
+				Thread.sleep(2000);
+				WebElement logout = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.TextView"));	
+
+
 	
+				logout.click();}
+	          
+
 
 }
-

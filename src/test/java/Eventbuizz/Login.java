@@ -52,11 +52,7 @@ public class Login {
 				WebElement email    = driver.findElement(By.id("com.eventbuizz.checkin:id/emailField"));
 				WebElement password  = driver.findElement(By.id("com.eventbuizz.checkin:id/passwordField"));
 				WebElement signin  = driver.findElement(By.id("com.eventbuizz.checkin:id/btnSave"));
-				
 
-				
-				
-				
 				
 				EveCode.sendKeys("8167");
 				email.sendKeys("mus@eventbuizz.com");

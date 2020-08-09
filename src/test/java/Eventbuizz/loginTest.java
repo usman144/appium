@@ -12,6 +12,8 @@ import io.appium.java_client.AppiumDriver;
 @Test
 public class EveTest {
 	
+	
+	
 	DesiredCapabilities cap = new DesiredCapabilities();
 	cap.setCapability("deviceName", "Android Emulator");
 	cap.setCapability("platformName", "Android");

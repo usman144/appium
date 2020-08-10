@@ -62,6 +62,18 @@ public class event_logout {
 				System.out.println("SignUp USeCase passed");
 				logout.click();
 	            System.out.println("SignOut USeCase");
+	            
+	            System.out.println("SignOut USeCase");
+	            System.out.println("SignOut USeCase");
+	            System.out.println("SignOut USeCase");
+	            System.out.println("SignOut USeCase");
+	            System.out.println("SignOut USeCase");
+	            System.out.println("SignOut USeCase");
+	            System.out.println("SignOut USeCase");
+	            System.out.println("SignOut USeCase");
+	            System.out.println("SignOut USeCase");
+	            System.out.println("SignOut USeCase");
+	            System.out.println("SignOut USeCase");
 }
 	          
 

@@ -1,5 +1,6 @@
 package Eventbuizz;
 
+import java.net.MalformedURLException;
 import java.net.URL;
 
 import org.openqa.selenium.By;
@@ -9,9 +10,10 @@ import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumDriver;
 
+public class loginTest{
 @Test
-public class EveTest {
-	static AppiumDriver<WebElement>driver;
+public void EveTest() throws MalformedURLException {
+	 AppiumDriver<WebElement>driver;
 	
 	
 	DesiredCapabilities cap = new DesiredCapabilities();
@@ -33,6 +35,16 @@ public class EveTest {
 	WebElement EveCode  = driver.findElement(By.id("com.eventbuizz.checkin:id/eteventCode"));
 	WebElement email    = driver.findElement(By.id("com.eventbuizz.checkin:id/emailField"));
 	WebElement password  = driver.findElement(By.id("com.eventbuizz.checkin:id/passwordField"));
+	WebElement signin  = driver.findElement(By.id("com.eventbuizz.checkin:id/btnSave"));
+
+	
+	
+	
+	EveCode.sendKeys("8167");
+	email.sendKeys("mus@eventbuizz.com");
+	password.sendKeys("123456");
+	signin.click();
 	
 
+}
 }

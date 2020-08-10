@@ -50,24 +50,21 @@ public class event_logout {
 				WebElement email    = driver.findElement(By.id("com.eventbuizz.checkin:id/emailField"));
 				WebElement password  = driver.findElement(By.id("com.eventbuizz.checkin:id/passwordField"));
 				WebElement signin  = driver.findElement(By.id("com.eventbuizz.checkin:id/btnSave"));
-
+				Thread.sleep(2000);
+				WebElement logout = driver.findElement(By.className("android.widget.TextView"));
+	
+			//	WebElement logout = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.TextView"));
 				
 				EveCode.sendKeys("8167");
 				email.sendKeys("mus@eventbuizz.com");
 				password.sendKeys("123456");
 				signin.click();
-				System.out.println("login Test passed");
-				
-				
-				
-				
-				Thread.sleep(2000);
-				WebElement logout = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.TextView"));	
-
-
-	
-				logout.click();}
+				System.out.println("SignUp USeCase passed");
+				logout.click();
+	            System.out.println("SignOut USeCase");
+}
 	          
+
 
 
 }

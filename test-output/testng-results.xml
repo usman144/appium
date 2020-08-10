@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="25653" started-at="2020-08-10T21:30:49 PKT" finished-at="2020-08-10T21:31:14 PKT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="25653" started-at="2020-08-10T21:30:49 PKT" finished-at="2020-08-10T21:31:14 PKT">
+      <class name="Eventbuizz.loginTest">
+        <test-method status="PASS" signature="EveTest()[pri:0, instance:Eventbuizz.loginTest@3c9d0b9d]" name="EveTest" duration-ms="25579" started-at="2020-08-10T21:30:49 PKT" finished-at="2020-08-10T21:31:14 PKT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EveTest -->
+      </class> <!-- Eventbuizz.loginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
